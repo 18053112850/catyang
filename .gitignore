@@ -1,7 +1,9 @@
-.DS_Store
-Thumbs.db
-db.json
-*.log
-node_modules/
-public/
-.deploy*/
+_algolia_api_key
+_site
+.bundle
+.sass-cache
+*.gem
+assets
+Gemfile.lock
+node_modules
+yarn-error.log
