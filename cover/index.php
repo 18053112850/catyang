@@ -5,5 +5,10 @@ $img = array_rand($img_array);
 
 $imgurl=$img_array[$img]; 
 
-
+if($imgurl) { 
+	header("Location: " . $imgurl);
+	exit();
+} else {
+	exit('error');
+}
 ?>
