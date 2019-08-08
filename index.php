@@ -39,6 +39,37 @@ get_header();
 		}
 	?>
 	
-	
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">	
+		<h1 class="main-title" style="font-family: 'Ubuntu', sans-serif;"><i class="fa fa-envira" aria-hidden="true"></i> Discovery</h1>
+		<?php
+		if ( have_posts() ) :
+
+			if ( is_home() && ! is_front_page() ) : ?>
+			<header>
+				<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+			</header>
+
+			<?php
+			endif;
+			/* Start the Loop */
+			if(akina_option('post_list_style') == 'standard'){
+				while ( have_posts() ) : the_post();
+				get_template_part( 'tpl/content', get_post_format() );
+				endwhile; 
+			}else{
+				get_template_part( 'tpl/content', 'thumb' );
+			}
+		?>
+		<?php else : get_template_part( 'tpl/content', 'none' ); endif; ?>
+		</main><!-- #main -->
+		<?php if ( akina_option('pagenav_style') == 'ajax') { ?>
+		<div id="pagination"><?php next_posts_link('Previous'); ?></div>
+		<?php }else{ ?>
+		<nav class="navigator">
+		<?php previous_posts_link('<i class="iconfont icon-back"></i>') ?><?php next_posts_link('<i class="iconfont icon-right"></i>') ?>
+		</nav>
+		<?php } ?>
+	</div><!-- #primary -->
 <?php
 get_footer();
