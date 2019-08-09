@@ -1,9 +1,43 @@
-_algolia_api_key
+# Ignore docs files
+_gh_pages
 _site
-.bundle
-.sass-cache
-*.gem
-assets
-Gemfile.lock
+.ruby-version
+
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.zip
+*.vi
+*~
+
+# OS or Editor folders
+.vscode
+.DS_Store
+._*
+Thumbs.db
+.cache
+.project
+.settings
+.tmproj
+*.esproj
+nbproject
+*.sublime-project
+*.sublime-workspace
+.idea
+
+# Komodo
+*.komodoproject
+.komodotools
+
+# grunt-html-validation
+validation-status.json
+validation-report.json
+
+# Folders to ignore
 node_modules
-yarn-error.log
+bower_components
