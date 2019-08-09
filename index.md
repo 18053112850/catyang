@@ -1,8 +1,8 @@
 ---
 layout: page
-title: 今、情热が岚になって
+title: catyang
 showtag:
-- ICPC模板
+- ICPC
 ---
 ## 近期
 
@@ -18,7 +18,7 @@ showtag:
 
 {% endfor %}
 
-- [更多…](/archive)
+- [更多…](/catyang/archive)
 
 {% for tag in page.showtag %}
 
