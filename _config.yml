@@ -177,15 +177,15 @@ sidebar:
     class: 'fa fa-smile-o fa-fw'
   nav:
   - title: '<span class="fa fa-home fa-fw"></span>&nbsp;首页'
-    href: /
+    href: /catyang/
   - title: '<span class="fa fa-info-circle fa-fw"></span>&nbsp;关于'
-    href: /about
+    href: /catyang/about
   - title: '<span class="fa fa-comments-o fa-fw"></span>&nbsp;友链和留言'
-    href: /comments
+    href: /catyang/comments
   - title: '<span class="fa fa-tags fa-fw"></span>&nbsp;标签'
-    href: /tags
+    href: /catyang/tags
   - title: '<span class="fa fa-archive fa-fw"></span>&nbsp;归档'
-    href: /archive
+    href: /catyang/archive
 
 simple_jekyll_search:
   enable: true
