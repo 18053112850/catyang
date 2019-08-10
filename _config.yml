@@ -40,7 +40,7 @@ tagline:               >
 keywords:              []
 
 # Used by jekyll-seo-tag...
-logo:                  /assets/icons/icon.png
+logo:                  /catyang/assets/icons/icon.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 # Duplication is necessary due to the `jekyll-feed`, `jekyll-seo-tag` plugin.
@@ -66,7 +66,7 @@ permalink:             pretty
 
 # Pagination configuration (used by the `blog` layout)
 paginate:              5
-paginate_path:         /page-:num/
+paginate_path:         /catyang/page-:num/
 
 
 # Customizaton
@@ -152,15 +152,15 @@ hydejack:
 
 collections:
   featured_categories:
-    permalink:         /category/:name/
+    permalink:         /catyang/category/:name/
     output:            true
 
   featured_tags:
-    permalink:         /tag/:name/
+    permalink:         /catyang/tag/:name/
     output:            true
 
   projects:
-    permalink:         /projects/:path/
+    permalink:         /catyang/projects/:path/
     output:            true
 
 
