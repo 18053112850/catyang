@@ -169,11 +169,11 @@ sidebar:
   - title: github # email
     href: //github.com/cattang
     class: 'fa fa-github fa-fw'
-  - title: WuK # codeforces
-    href: //codeforces.com/profile/WuK
+  - title: cattang # codeforces
+    href: //codeforces.com/profile/cattang
     class: 'fa fa-bar-chart fa-fw'
-  - title: WuK # vjudge
-    href: //vjudge.net/user/WuK
+  - title: cattang # vjudge
+    href: //vjudge.net/user/cattang
     class: 'fa fa-smile-o fa-fw'
   nav:
   - title: '<span class="fa fa-home fa-fw"></span>&nbsp;首页'
@@ -223,7 +223,7 @@ run_time:
 
 copyright:
   enable: true
-  text: '已开源于<a href="//github.com/18053112850/18053112850.github.io/cattang">GitHub</a><br>'
+  text: '已开源于<a href="//github.com/18053112850/18053112850.github.io/catyang">GitHub</a><br>'
 
 post:
   meta:
@@ -266,12 +266,6 @@ valine:
   avatarForce: false # 每次访问强制拉取最新的评论列表头像
   recordIP: true # 记录评论者IP
 
-page404:
-  search_children: # 腾讯公益
-    enable: true
-    src: //qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js
-    charset: utf-8
-    homePageUrl: '/'
-    homePageName: 回到我的主页
+
 
 baidu_push: true
