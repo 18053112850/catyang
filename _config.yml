@@ -266,12 +266,6 @@ valine:
   avatarForce: false # 每次访问强制拉取最新的评论列表头像
   recordIP: true # 记录评论者IP
 
-page404:
-  search_children: # 腾讯公益
-    enable: true
-    src: //qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js
-    charset: utf-8
-    homePageUrl: '/catyang/'
-    homePageName: 回到我的主页
+
 
 baidu_push: true
