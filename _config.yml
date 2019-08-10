@@ -1,9 +1,9 @@
 title: wu-kan
 url: http://wu-kan.github.io
-baseurl: '' # 假如你的博客是建在某个目录下的，请在这里加上目录名，并且下面配置的所有链接里的`/public`前也要加，即`/your_baseurl/public`。这一项结尾不要有'/'
-author: WuK
+baseurl: 'catyang' # 假如你的博客是建在某个目录下的，请在这里加上目录名，并且下面配置的所有链接里的`/public`前也要加，即`/your_baseurl/public`。这一项结尾不要有'/'
+author: catyang
 
-permalink: /posts/:categories/:title # 博文目录
+permalink: /catyang/posts/:categories/:title # 博文目录
 
 head: # 删改前确定知道自己在做什么
 - tag: meta # Enable responsiveness on mobile devices
@@ -53,7 +53,7 @@ head: # 删改前确定知道自己在做什么
   - key: rel
     value: alternate
   - key: href
-    value: /atom.xml
+    value: /catyang/atom.xml
   - key: title
     value: RSS
   - key: type
@@ -93,7 +93,7 @@ head: # 删改前确定知道自己在做什么
   - key: rel
     value: stylesheet
   - key: href
-    value: /public/css/wu-kan.css
+    value: /catyang/public/css/wu-kan.css
 - tag: link
   var:
   - key: rel
@@ -114,9 +114,9 @@ script: # 需要在正文后调用的脚本
 - src: //cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js
 - src: //cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js
 - src: //cdn.jsdelivr.net/npm/prismjs/plugins/toolbar/prism-toolbar.min.js
-- src: /public/js/prism.js
-- src: /public/js/mermaid.js
-- src: /public/js/katex.js
+- src: /catyang/public/js/prism.js
+- src: /catyang/public/js/mermaid.js
+- src: /catyang/public/js/katex.js
 
 mermaid: # https://github.com/knsv/mermaid
   enable: true
@@ -157,7 +157,7 @@ sidebar:
   description: '<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=52 src="//music.163.com/outchain/player?type=0&id=155059595&auto=0&height=32"></iframe>'
   social:
   - title: rss # rss
-    href: /atom.xml
+    href: /catyang/atom.xml
     class: 'fa fa-rss fa-fw'
   - title: 942759535 # qq
     class: 'fa fa-qq fa-fw'
@@ -179,13 +179,13 @@ sidebar:
   - title: '<span class="fa fa-home fa-fw"></span>&nbsp;首页'
     href: /
   - title: '<span class="fa fa-info-circle fa-fw"></span>&nbsp;关于'
-    href: /about
+    href: /catyang/about
   - title: '<span class="fa fa-comments-o fa-fw"></span>&nbsp;友链和留言'
-    href: /comments
+    href: /catyang/comments
   - title: '<span class="fa fa-tags fa-fw"></span>&nbsp;标签'
-    href: /tags
+    href: /catyang/tags
   - title: '<span class="fa fa-archive fa-fw"></span>&nbsp;归档'
-    href: /archive
+    href: /catyang/archive
 
 simple_jekyll_search:
   enable: true
@@ -194,7 +194,7 @@ simple_jekyll_search:
   noResultsText: 没有搜索到文章 # 无搜索数据提示语
   limit: 10 # 返回最大文章数
   fuzzy: false # 是否模糊匹配
-  json: /public/simple-jekyll-search/search.json
+  json: /catyang/public/simple-jekyll-search/search.json
 
 jekyll_table_of_contents:
   enable: true
@@ -248,9 +248,9 @@ post:
     text: 如果我的博客帮助到你，可以请我喝一杯咖啡~
     img: # 万一真的有人打赏呢~
     - id: wechat
-      src: /public/image/wechatpay.jpg
+      src: /catyang/public/image/wechatpay.jpg
     - id: alipay
-      src: /public/image/alipay.jpg
+      src: /catyang/public/image/alipay.jpg
 
 valine:
   enable: true
