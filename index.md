@@ -1,8 +1,8 @@
 ---
 layout: page
-title: 贪睡猫
+title: 今、情热が岚になって
 showtag:
-- 小趣闻
+- ICPC模板
 ---
 ## 近期
 
@@ -18,7 +18,7 @@ showtag:
 
 {% endfor %}
 
-- [更多…](/catyang/archive)
+- [更多…](/archive)
 
 {% for tag in page.showtag %}
 

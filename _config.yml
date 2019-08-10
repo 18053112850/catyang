@@ -1,9 +1,9 @@
 title: wu-kan
-url: http://18053112850.github.io
-baseurl: '/catyang' # 假如你的博客是建在某个目录下的，请在这里加上目录名，并且下面配置的所有链接里的`/public`前也要加，即`/your_baseurl/public`。这一项结尾不要有'/'
+url: http://wu-kan.github.io
+baseurl: '' # 假如你的博客是建在某个目录下的，请在这里加上目录名，并且下面配置的所有链接里的`/public`前也要加，即`/your_baseurl/public`。这一项结尾不要有'/'
 author: WuK
 
-permalink: /catyang/posts/:categories/:title # 博文目录
+permalink: /posts/:categories/:title # 博文目录
 
 head: # 删改前确定知道自己在做什么
 - tag: meta # Enable responsiveness on mobile devices
@@ -53,7 +53,7 @@ head: # 删改前确定知道自己在做什么
   - key: rel
     value: alternate
   - key: href
-    value: /catyang/atom.xml
+    value: /atom.xml
   - key: title
     value: RSS
   - key: type
@@ -93,7 +93,7 @@ head: # 删改前确定知道自己在做什么
   - key: rel
     value: stylesheet
   - key: href
-    value: /catyang/public/css/wu-kan.css
+    value: /public/css/wu-kan.css
 - tag: link
   var:
   - key: rel
@@ -114,9 +114,9 @@ script: # 需要在正文后调用的脚本
 - src: //cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js
 - src: //cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js
 - src: //cdn.jsdelivr.net/npm/prismjs/plugins/toolbar/prism-toolbar.min.js
-- src: /catyang/public/js/prism.js
-- src: /catyang/public/js/mermaid.js
-- src: /catyang/public/js/katex.js
+- src: /public/js/prism.js
+- src: /public/js/mermaid.js
+- src: /public/js/katex.js
 
 mermaid: # https://github.com/knsv/mermaid
   enable: true
@@ -157,7 +157,7 @@ sidebar:
   description: '<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=52 src="//music.163.com/outchain/player?type=0&id=155059595&auto=0&height=32"></iframe>'
   social:
   - title: rss # rss
-    href: /catyang/atom.xml
+    href: /atom.xml
     class: 'fa fa-rss fa-fw'
   - title: 942759535 # qq
     class: 'fa fa-qq fa-fw'
@@ -167,25 +167,25 @@ sidebar:
     href: mailto:wu.kan@foxmail.com
     class: 'fa fa-envelope fa-fw'
   - title: github # email
-    href: //github.com/cattang
+    href: //github.com/wu-kan
     class: 'fa fa-github fa-fw'
-  - title: cattang # codeforces
-    href: //codeforces.com/profile/cattang
+  - title: WuK # codeforces
+    href: //codeforces.com/profile/WuK
     class: 'fa fa-bar-chart fa-fw'
-  - title: cattang # vjudge
-    href: //vjudge.net/user/cattang
+  - title: WuK # vjudge
+    href: //vjudge.net/user/WuK
     class: 'fa fa-smile-o fa-fw'
   nav:
   - title: '<span class="fa fa-home fa-fw"></span>&nbsp;首页'
-    href: /catyang/
+    href: /
   - title: '<span class="fa fa-info-circle fa-fw"></span>&nbsp;关于'
-    href: /catyang/about
+    href: /about
   - title: '<span class="fa fa-comments-o fa-fw"></span>&nbsp;友链和留言'
-    href: /catyang/comments
+    href: /comments
   - title: '<span class="fa fa-tags fa-fw"></span>&nbsp;标签'
-    href: /catyang/tags
+    href: /tags
   - title: '<span class="fa fa-archive fa-fw"></span>&nbsp;归档'
-    href: /catyang/archive
+    href: /archive
 
 simple_jekyll_search:
   enable: true
@@ -194,7 +194,7 @@ simple_jekyll_search:
   noResultsText: 没有搜索到文章 # 无搜索数据提示语
   limit: 10 # 返回最大文章数
   fuzzy: false # 是否模糊匹配
-  json: /catyang/public/simple-jekyll-search/search.json
+  json: /public/simple-jekyll-search/search.json
 
 jekyll_table_of_contents:
   enable: true
@@ -223,7 +223,7 @@ run_time:
 
 copyright:
   enable: true
-  text: '已开源于<a href="//github.com/18053112850/18053112850.github.io/catyang">GitHub</a><br>'
+  text: '已开源于<a href="//github.com/wu-kan/wu-kan.github.io">GitHub</a><br>'
 
 post:
   meta:
@@ -248,9 +248,9 @@ post:
     text: 如果我的博客帮助到你，可以请我喝一杯咖啡~
     img: # 万一真的有人打赏呢~
     - id: wechat
-      src: /catyang/public/image/wechatpay.jpg
+      src: /public/image/wechatpay.jpg
     - id: alipay
-      src: /catyang/public/image/alipay.jpg
+      src: /public/image/alipay.jpg
 
 valine:
   enable: true
@@ -266,6 +266,12 @@ valine:
   avatarForce: false # 每次访问强制拉取最新的评论列表头像
   recordIP: true # 记录评论者IP
 
-
+page404:
+  search_children: # 腾讯公益
+    enable: true
+    src: //qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js
+    charset: utf-8
+    homePageUrl: '/'
+    homePageName: 回到我的主页
 
 baidu_push: true
