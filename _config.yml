@@ -4,7 +4,7 @@
 # IMPORTANT: Set the URL of your site.
 # Set to https://<username>.github.io when hosting on GitHub Pages
 # (unless you are using a custom domain).
-url:                   https://domain.tld
+url:                   https://18053112850.github.io/catyang/
 
 # IMPORTANT: Set The "base URL" of your site.
 #
@@ -19,10 +19,10 @@ baseurl:               'catyang'
 
 # Language of your content in 2-letter code, e.g.: en, de.
 # You may also provide a location, e.g.: en-us, de_AT.
-lang:                  en
+lang:                  cn
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 Hydejack
+title:                 大脸猫
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
