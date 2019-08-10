@@ -1,277 +1,271 @@
-title: wu-kan
-url: http://wu-kan.github.io
-baseurl: 'catyang' # 假如你的博客是建在某个目录下的，请在这里加上目录名，并且下面配置的所有链接里的`/public`前也要加，即`/your_baseurl/public`。这一项结尾不要有'/'
-author: catyang
+# Config
+# ========================================================================================
 
-permalink: /catyang/posts/:categories/:title # 博文目录
+# IMPORTANT: Set the URL of your site.
+# Set to https://<username>.github.io when hosting on GitHub Pages
+# (unless you are using a custom domain).
+url:                   https://domain.tld
 
-head: # 删改前确定知道自己在做什么
-- tag: meta # Enable responsiveness on mobile devices
-  var:
-  - key: name
-    value: viewport
-  - key: content
-    value: width=device-width, initial-scale=1.0, maximum-scale=1
-- tag: meta
-  var:
-  - key: http-equiv
-    value: X-UA-Compatible
-  - key: content
-    value: IE=edge
-- tag: meta
-  var:
-  - key: http-equiv
-    value: content-type
-  - key: content
-    value: 'text/html; charset=utf-8'
-- tag: meta # google站点验证
-  var:
-  - key: name
-    value: google-site-verification
-  - key: content
-    value: YIKi1rBnyUaS-DMYiluseI5kZzTwjCkTFmKkSkMZDJk
-- tag: meta # baidu站点验证
-  var:
-  - key: name
-    value: baidu-site-verification
-  - key: content
-    value: bEFDJ1LvXb
-- tag: meta # yandex站点验证
-  var:
-  - key: name
-    value: yandex-verification
-  - key: content
-    value: 52253e02830b443c
-- tag: link
-  var:
-  - key: rel
-    value: profile
-  - key: href
-    value: //gmpg.org/xfn/11
-- tag: link # rss
-  var:
-  - key: rel
-    value: alternate
-  - key: href
-    value: /catyang/atom.xml
-  - key: title
-    value: RSS
-  - key: type
-    value: application/rss+xml
-- tag: link # 网站大图标，我偷懒直接用gravatar了，也可以存在/public里面
-  var:
-  - key: rel
-    value: apple-touch-icon-precomposed
-  - key: href
-    value: //www.gravatar.com/avatar/a12c5fff23dde00df79af9aca4e7b6e4?d=wavatar&s=144
-- tag: link # 小图标，同上
-  var:
-  - key: rel
-    value: 'shortcut icon'
-  - key: href
-    value: //www.gravatar.com/avatar/a12c5fff23dde00df79af9aca4e7b6e4?d=wavatar&s=32
-- tag: link # 下面是博客的css，有些插件的css是单独在插件里引用的，假如需要自己的css可以仿照去加在后面。无脑cdn加速了。
-  var:
-  - key: rel
-    value: stylesheet
-  - key: href
-    value: //cdn.jsdelivr.net/gh/wu-kan/wu-kan.github.io/public/css/poole.css # 用cdn加速会出问题，暂时不知道为什么
-- tag: link
-  var:
-  - key: rel
-    value: stylesheet
-  - key: href
-    value: //cdn.jsdelivr.net/gh/poole/lanyon/public/css/syntax.css
-- tag: link
-  var:
-  - key: rel
-    value: stylesheet
-  - key: href
-    value: //cdn.jsdelivr.net/gh/wu-kan/wu-kan.github.io/public/css/lanyon.css
-- tag: link
-  var:
-  - key: rel
-    value: stylesheet
-  - key: href
-    value: /catyang/public/css/wu-kan.css
-- tag: link
-  var:
-  - key: rel
-    value: stylesheet
-  - key: href
-    value: //cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css
+# IMPORTANT: Set The "base URL" of your site.
+#
+# When hosting your site in a subdirectory of a server, set to /<name of directory>
+# (with leading /, but without the < >)
+# Use the empty string '' otherwise.
+#
+# When using GitHub Pages, set to '' when hosting a user- or organization page,
+# i.e. when the name of the repository looks like <username>.github.io.
+# Otherwise, set to /<name of repository> (with leading /, but without the < >).
+baseurl:               ''
 
-body:
-  theme-base: theme-base-0d # 可选的值08~0f
-  layout-reverse: true # 开启后sidebar在右边，反之左边
-  sidebar-overlay: true # 开启后正文不随sidebar移动而移动
+# Language of your content in 2-letter code, e.g.: en, de.
+# You may also provide a location, e.g.: en-us, de_AT.
+lang:                  en
 
-script: # 需要在正文后调用的脚本
-- src: //cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js # jQuery
-- src: //cdn.jsdelivr.net/npm/ribbon.js/dist/ribbon.min.js # 彩带背景
-- src: //cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js # live2d
-- src: //cdn.jsdelivr.net/npm/prismjs/components/prism-core.min.js
-- src: //cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js
-- src: //cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js
-- src: //cdn.jsdelivr.net/npm/prismjs/plugins/toolbar/prism-toolbar.min.js
-- src: /catyang/public/js/prism.js
-- src: /catyang/public/js/mermaid.js
-- src: /catyang/public/js/katex.js
+# The title of your blog. Used in the sidebar and the browser tab.
+title:                 Hydejack
 
-mermaid: # https://github.com/knsv/mermaid
-  enable: true
-  src: //cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
-  stylesheet: //cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css
-  markdown_expand: true
+# A short description (~150 chars) of the page used for the meta description tag.
+# Can use markdown, but no more than one paragraph (enforced by `>`)
+description:           >
+  A Jekyll theme with JavaScript powers. "Best Theme by a Mile".
+  Combines the best of static sites and modern web apps.
+  Open `_config.yml` to edit this text.
 
-PrismJS: # 代码高亮插件，可以在https://prismjs.com/download.html自己定制，将定制的js和css替换我的/public/PrismJS下的对应文件即可。我这里只导入了三个自己喜欢的插件。
-  enable: true
-  src:
-    - stylesheet: //cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css
-    - stylesheet: //cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.css
-    - stylesheet: //cdn.jsdelivr.net/npm/prismjs/plugins/toolbar/prism-toolbar.css
-  plugins:
-    line_numbers: true
-    autoloader: //cdn.jsdelivr.net/npm/prismjs/components/ # 根据语言自动加载的高亮插件
-    toolbar:
-      show_language:
-        enable: true
-        text: 猜猜这是什么语言？
-        alert: 用的是
-      select_code:
-        enable: true
-        innerHTML: 选中这段代码？
+# A shorter description for the sidebar.
+tagline:               >
+  A Jekyll theme with JavaScript powers.
+  Open `_config.yml` to edit this text.
 
-katex: # KaTeX
-  enable: true
-  stylesheet: //cdn.jsdelivr.net/npm/katex/dist/katex.min.css
-  src: //cdn.jsdelivr.net/npm/katex/dist/katex.min.js
-  auto-render: //cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js
-  delimiters: true # 开启行内公式$\KaTeX$支持
+# A list of keywords for your blog
+keywords:              []
 
-sidebar:
-  avatar: # 侧边栏显示的头像
-    enable: true
-    img: //www.gravatar.com/avatar/a12c5fff23dde00df79af9aca4e7b6e4?d=wavatar&s=600 # 头像的地址
-    info: <br>SYSU17级在读<br>计科超算方向<br>ACMer<br>田宫例四驱车<br>永远喜欢水野爱 # 头像背后的信息
-  description: '<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=52 src="//music.163.com/outchain/player?type=0&id=155059595&auto=0&height=32"></iframe>'
-  social:
-  - title: rss # rss
-    href: /catyang/atom.xml
-    class: 'fa fa-rss fa-fw'
-  - title: 942759535 # qq
-    class: 'fa fa-qq fa-fw'
-  - title: Wu-_-Kan # weixin
-    class: 'fa fa-weixin fa-fw'
-  - title: wu.kan@foxmail.com # email
-    href: mailto:wu.kan@foxmail.com
-    class: 'fa fa-envelope fa-fw'
-  - title: github # email
-    href: //github.com/wu-kan
-    class: 'fa fa-github fa-fw'
-  - title: WuK # codeforces
-    href: //codeforces.com/profile/WuK
-    class: 'fa fa-bar-chart fa-fw'
-  - title: WuK # vjudge
-    href: //vjudge.net/user/WuK
-    class: 'fa fa-smile-o fa-fw'
-  nav:
-  - title: '<span class="fa fa-home fa-fw"></span>&nbsp;首页'
-    href: /
-  - title: '<span class="fa fa-info-circle fa-fw"></span>&nbsp;关于'
-    href: /catyang/about
-  - title: '<span class="fa fa-comments-o fa-fw"></span>&nbsp;友链和留言'
-    href: /catyang/comments
-  - title: '<span class="fa fa-tags fa-fw"></span>&nbsp;标签'
-    href: /catyang/tags
-  - title: '<span class="fa fa-archive fa-fw"></span>&nbsp;归档'
-    href: /catyang/archive
+# Used by jekyll-seo-tag...
+logo:                  /assets/icons/icon.png
 
-simple_jekyll_search:
-  enable: true
-  src: //cdn.jsdelivr.net/npm/simple-jekyll-search/dest/simple-jekyll-search.min.js
-  placeholder: 搜索博文
-  noResultsText: 没有搜索到文章 # 无搜索数据提示语
-  limit: 10 # 返回最大文章数
-  fuzzy: false # 是否模糊匹配
-  json: /catyang/public/simple-jekyll-search/search.json
+# This should be the same author as first entry in `_data/authors.yml`.
+# Duplication is necessary due to the `jekyll-feed`, `jekyll-seo-tag` plugin.
+author:
+  name:                <firstname> <lastname>
+  email:               <mail@domain.tld>
+  # Used by `jekyll-seo-tag`:
+  # twitter:             <username>
 
-jekyll_table_of_contents:
-  enable: true
+# This text will appear in a `<small>` tag in the footer of every page.
+copyright:             © 2017. All rights reserved.
 
-busuanzi:
-  enable: true
-  src: //cdn.jsdelivr.net/npm/busuanzi/bsz.pure.mini.js
-  page_pv:
-    alert: 被阅读
-    unit: 次
-  site_pv:
-    alert: 被访问
-    unit: 次
-  site_uv:
-    alert: 第
-    unit: 位访客
+# Add links to the footer.
+# Typically you'll want to link to your impress, cookies or privacy policy, etc.
+# legal:
+#   - title:             Impress
+#     href:              /impress/
+#   - title:             Cookies Policy
+#     href:              /cookies-policy/
 
-run_time:
-  enable: true
-  start-time: '10/04/2017 11:03:56' # 这是我第一篇CSDN博客的时间
-  alert: 努力运行
-  day: 天
-  hour: 时
-  minute: 分
-  second: 秒
+# Format of the permalinks
+permalink:             pretty
 
-copyright:
-  enable: true
-  text: '已开源于<a href="//github.com/wu-kan/wu-kan.github.io">GitHub</a><br>'
+# Pagination configuration (used by the `blog` layout)
+paginate:              5
+paginate_path:         /page-:num/
 
-post:
-  meta:
-    enable: true
-    date: true
-    wordcount:
-      enable: true
-      unit: 字
-    readtime:
-      enable: true
-      unit: 分
-      divided_by: 300
-    visitor: # 需要开启valine的visitor选项使之开始计数; 可能会和busuanzi统计的有出入
-      enable: true
-      unit: 次
-    copyright: '<span class="fa fa-creative-commons"></span>&nbsp;<a rel="license" href="//creativecommons.org/licenses/by-sa/4.0/deed.zh">BY-SA 4.0</a>（除特别声明或转载文章外）'
-  related:
-    enable: false
-    title: 相关博文
-  reward:
-    enable: true
-    text: 如果我的博客帮助到你，可以请我喝一杯咖啡~
-    img: # 万一真的有人打赏呢~
-    - id: wechat
-      src: /catyang/public/image/wechatpay.jpg
-    - id: alipay
-      src: /catyang/public/image/alipay.jpg
 
-valine:
-  enable: true
-  src: //cdn.jsdelivr.net/npm/valine
-  appId: 9hABRddSuEkTgqLrt1VSK5B1-gzGzoHsz
-  appKey: NJ7RwmgrxsF7KDzlqU7YewlL
-  notify: true # 评论回复邮件提醒
-  verify: true # 验证码服务
-  avatar: identicon
-  placeholder: 在这里评论吧！
-  visitor: true # 文章访问量统计
-  highlight: true # 代码高亮
-  avatarForce: false # 每次访问强制拉取最新的评论列表头像
-  recordIP: true # 记录评论者IP
+# Customizaton
+# ========================================================================================
 
-page404:
-  search_children: # 腾讯公益
-    enable: true
-    src: //qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js
-    charset: utf-8
-    homePageUrl: '/catyang/'
-    homePageName: 回到我的主页
+# Sidebar image and theme color of the site.
+accent_image:          /assets/img/sidebar-bg.jpg
+accent_color:          '#4fb1ba'
 
-baidu_push: true
+# The string encoding which fonts to fetch from Google Fonts.
+# See: <https://qwtel.com/hydejack/docs/configuration/>
+google_fonts:          Roboto+Slab:700|Noto+Sans:400,400i,700,700i
+
+# The text font. Expects a string that is a valid CSS font-family value.
+font:                  Noto Sans, Helvetica, Arial, sans-serif
+
+# The font used for headings. Expects a string that is a valid CSS font-family value.
+font_heading:          Roboto Slab, Helvetica, Arial, sans-serif
+
+# 3rd Party Integrations
+# ----------------------------------------------------------------------------------------
+
+# Set your Google Analytics id to receive `pageview` events.
+# To remove Google Anaylics from your page, remove the line below.
+# google_analytics:      UA-XXXXXXXX-X
+
+# Setting a disqus shortname will enable the comment section on
+# pages with `comments: true` in the front matter.
+# disqus:                <disqus_shortname>
+
+# Setting a tinyletter username will enable the newsletter subscription box.
+# tinyletter:            <tinyletter_username>
+
+# Hydejack Settings
+# ----------------------------------------------------------------------------------------
+# These settings are specific to Hydejack.
+
+hydejack:
+  # Configure the order of complementary content on blog posts
+  post_addons:         [about, newsletter, related]
+
+  # Configure the order of complementary content on project pages
+  project_addons:      [about, newsletter, other]
+
+  # If you do not use Google Fonts, set to `true`.
+  no_google_fonts:     false
+
+  # Set to `true` if you don't want to show an icon indicating external links
+  no_mark_external:    false
+
+  # Set to `true` if third party plugins fail to work with dynamically loaded pages
+  no_push_state:       false
+
+  # Set to `true` if you want to disable the drawer
+  no_drawer:           false
+
+  # Set to `true` if you do not want parts of the css inlined in <head/>
+  # This *may* be benefitial when serving the site over HTTP/2.
+  no_inline_css:       false
+
+  # Code blocks and tables "break" the layout by spanning the full available width.
+  # Set this to true if you want them to be the same width as other content.
+  no_break_layout:     false
+
+  # Set to `true` if you do not want to expose your resume and projects
+  # in machine-readable formats.
+  no_structured_data:  false
+
+  # You can set this to `true` if you don't want to set the `theme-color` meta tag,
+  # This only affects the meta tag, not the color specified in the app manifest.
+  no_theme_color:      false
+
+  # Set to `true` when building with the `--lsi` option
+  use_lsi:             false
+
+  # When using Google Analytics, set to `true` to display a cookie notice banner.
+  # When enabled, no user-related data will be stored until the user gives consent.
+  cookies_banner:      false
+
+
+# Collections
+# ========================================================================================
+
+collections:
+  featured_categories:
+    permalink:         /category/:name/
+    output:            true
+
+  featured_tags:
+    permalink:         /tag/:name/
+    output:            true
+
+  projects:
+    permalink:         /projects/:path/
+    output:            true
+
+
+# File inclusion/exclusion
+# ========================================================================================
+
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - package-lock.json
+include:
+  - LICENSE.md
+
+
+# Plugins and Plugin Configuration
+# ========================================================================================
+
+plugins:
+  # - jekyll-avatar
+  # - jekyll-default-layout
+  - jekyll-feed
+  # - jekyll-gist
+  # - jekyll-optional-front-matter
+  - jekyll-paginate
+  # - jekyll-readme-index
+  # - jekyll-redirect-from
+  - jekyll-relative-links
+  # - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  # - jekyll-titles-from-headings
+
+# Theme
+# ---------------------------------------------------------------------------------------
+
+# theme: jekyll-theme-hydejack
+# remote_theme: qwtel/hydejack@gem
+
+# SEO Tag
+# ---------------------------------------------------------------------------------------
+
+# Where you proof that you own this site (used by jekyll-seo-tag)
+# google_site_verification: <verification-id>
+# -- or --
+# webmaster_verifications:
+#   google:              <verification-id>
+#   bing:                <verification-id>
+#   alexa:               <verification-id>
+#   yandex:              <verification-id>
+
+# Used for Twitter cards
+# twitter:
+#   username:            <shortname>
+
+# Used for Facebook open graph
+# facebook:
+#   app_id:              <id>
+#   publisher:           <id>
+#   admins:              <id>
+
+# Used on index and about sites
+# social:
+#   name:                <firstname> <lastname>
+#   links:
+#     - https://twitter.com/<username>
+#     - https://github.com/<username>
+
+
+# Other Plugins
+# ---------------------------------------------------------------------------------------
+
+optional_front_matter:
+  remove_originals:    true
+
+readme_index:
+  remove_originals:    true
+
+relative_links:
+  collections:         true
+
+titles_from_headings:
+  strip_title:         true
+  collections:         true
+
+kramdown:
+  footnote_backlink:   '&#x21a9;&#xfe0e;'
+  math_engine:         mathjax
+  math_engine_opts:
+    preview:           true
+    preview_as_code:   true
+
+compress_html:
+  comments:            ["<!-- ", " -->"]
+  clippings:           all
+  endings:             all
+  ignore:
+    envs:              [development]
+
+sass:
+  style:               compressed
+
+# If you are upgrading form v5 (or earlier), uncomment the lines below,
+# so that the location of the feed XML stays the same.
+# feed:
+#   path:                atom.xml
