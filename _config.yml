@@ -36,7 +36,7 @@ tagline:               >
 keywords:              [肥宅]
 
 # Used by jekyll-seo-tag...
-logo:                  /catyang/assets/icons/icon.png
+logo:                  https://orangemushroom.files.wordpress.com/2017/09/maplestory-256x256.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 # Duplication is necessary due to the `jekyll-feed`, `jekyll-seo-tag` plugin.
