@@ -10,47 +10,47 @@
 
 # Free version
 # ---------------------------------------------------------------------------------------
-home:                  Home
+home:                  首页
 pages:                 Pages
 posts:                 Posts
 about:                 About
 related_posts:         Related Posts
-other_projects:        Other Projects
+other_projects:        其他
 comments:              Comments
 jump_to:               Jump to
 navigation:            Navigation
 social:                Social
 links:                 Links
 pagination:            Pagination
-newer:                 Newer
-older:                 Older
-back:                  Back
+newer:                 新的
+older:                 以前
+back:                  退出
 permalink:             Permalink
 permalink_icon:        icon-link
 templates:             Templates (for web app)
 
-loading:               Loading…
-redirecting:           Redirecting…
+loading:               加载中…
+redirecting:           刷新中…
 
 continue_reading:      >
-  Continue reading <!--post_title-->
+  展开阅读 <!--post_title-->
 
 cookies_banner:
   text:                >
-    This site uses cookies. [Cookies Policy](/hydejack/cookies-policy/).
+    本网站使用cookies。 [Cookies Policy](/hydejack/cookies-policy/).
   okay:                Okay
 
 not_found:
   title:               '404: Page Not Found'
   message:             |
-    Sorry, we've misplaced that URL or it's pointing to something that doesn't exist.
-    <!--home_link--> to try finding it again.
+    抱歉，我们错放了该网址，或者指向了不存在的内容。
+    <!--home_link--> 尝试再次找到它。
   home_link:           Head back home
 
 error:
   title:               Error
   message:             |
-    Sorry, an error occurred while loading <!--link-->.
+    抱歉，加载时出错 <!--link-->.
 
 # Separators
 # ---------------------------------------------------------------------------------------
