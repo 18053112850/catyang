@@ -23,7 +23,7 @@ author1:
   # Rearrange to change the order in which they appear
   social:
     #twitter:         <username>
-    #github:          <username>
+    github:           <18053112850>
     # email:           mailto:<mail@domain.tld>
     # rss:             https://<url>/feed.xml
     # facebook:        <username>
@@ -73,7 +73,7 @@ author2:
     Open `_data/authors.yml` to edit this text.
   picture:           https://orangemushroom.files.wordpress.com/2017/09/maplestory-256x256.png
   #twitter:           <username>
-  #github:            <username>
+  github:            <18053112850>
   accent_color:      '#268bd2'
   accent_image:
     background:      '#202020'
