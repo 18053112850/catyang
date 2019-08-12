@@ -7,7 +7,7 @@ title: LICENSE
 
 Version 3, 29 June 2007
 
-Copyright (C) 2007 Free Software Foundation, Inc.
+Copyright (C) 2019 Free Software Foundation, Inc.
 <http://fsf.org/>
 
 Everyone is permitted to copy and distribute verbatim copies of this
