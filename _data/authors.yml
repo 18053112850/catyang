@@ -72,8 +72,8 @@ author2:
 
     Open `_data/authors.yml` to edit this text.
   picture:           https://orangemushroom.files.wordpress.com/2017/09/maplestory-256x256.png
-  twitter:           <username>
-  github:            <username>
+  #twitter:           <username>
+  #github:            <username>
   accent_color:      '#268bd2'
   accent_image:
     background:      '#202020'
